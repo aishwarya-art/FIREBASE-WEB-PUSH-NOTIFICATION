@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-messaging.js"></script>
+    <style>     
+        p{  
+        border: 4px blue;  
+        font-size: 20px;  
+        color: red;  
+        text-align: center;  
+        }  
+        p.dashed {border-style: dashed;}    
+    </style>  
+</head>
+
+<body>
+  
+    <div class="container mt-5">
+        <h4>Push Notification using Firebase</h4>
+        <p class="dashed">
+        
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="usertoken">User Token</label>
+                    <input type="text" id="usertoken" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text"class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <input type="text" class="form-control" id="body">
+                </div>
+                <button class="btn btn-secondary" onclick="sendPush()">Add Notification</button>
+            </div>
+        </div></p>
+    </div>
+    <script src='app.js'></script>
+</body>
+
+</html>
